@@ -16,11 +16,6 @@ const {
 server.get("/api/users", (req, res) => {
     find()
     .then((result) => {
-        // if(result == null) {
-        //     res.status(500).json({message: "The users information could not be retrieved"})
-        // } else {
-        //     res.json(result)
-        // }
         res.json(result)
     })
     .catch(() => {
