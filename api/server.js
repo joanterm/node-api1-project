@@ -88,14 +88,4 @@ server.delete("/api/users/:id", (req, res) => {
     })
 })
 
-// If the user with the specified id is not found:
-
-// respond with HTTP status code 404 (Not Found).
-// return the following JSON object: { message: "The user with the specified ID does not exist" }.
-// If there's an error in removing the user from the database:
-
-// respond with HTTP status code 500.
-// return the following JSON object: { message: "The user could not be removed" }.
-
-
 module.exports = server // EXPORT YOUR SERVER instead of {}
